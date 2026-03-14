@@ -10,46 +10,82 @@ if os.getenv("OPENAI_API_KEY"):
     client = OpenAI(
         api_key=os.getenv("OPENAI_API_KEY"),
         # base_url=os.getenv("OPENAI_BASE_URL"),
-        timeout=5.0,  # 5 second timeout to prevent hanging
-        max_retries=0
+        timeout=15.0,  # Higher timeout for batch
+        max_retries=1
     )
 
-def evaluate_entity_llm(entity_data: dict) -> dict:
-    # If no LLM, return empty dict or default
-    if not client:
+def evaluate_file_llm_batch(file_data: list, context_text: str) -> dict:
+    """
+    Sends ONE prompt containing condensed summaries of all entities, 
+    and returns an array of indices defining which ones contain errors.
+    """
+    if not client or not file_data:
         return {}
         
-    entity = entity_data.get('entity', '')
-    entity_type = entity_data.get('entity_type', '')
-    text = entity_data.get('text', '')
+    model_name = os.getenv("LLM_MODEL", "gpt-4o-mini")
+
+    # Limit context text size
+    context_text = context_text[:3000] if len(context_text) > 3000 else context_text
+    
+    # Condense entities to minimize token usage
+    # We only send up to 50 entities max to avoid context bloat
+    sample_entities = file_data[:50] 
+    entities_str = "\n".join([
+        f"[{i}] '{ent.get('entity', '')}' | Type: {ent.get('entity_type', '')} | Assert: {ent.get('assertion', '')} | Temp: {ent.get('temporality', '')}"
+        for i, ent in enumerate(sample_entities)
+    ])
     
     prompt = f"""
-    Given the following clinical text and an extracted entity, evaluate if the extraction is correct.
-    Text: "{text}"
-    Extracted Entity: "{entity}"
-    Assigned Type: "{entity_type}"
+    You are evaluating clinical NLP extractions from a medical chart. 
+    Review the source text snippet and the extracted entities below.
     
-    Respond in strict JSON with the following boolean fields (true if there's an ERROR, false if CORRECT):
-    - is_type_error: true if the type doesn't fit the entity or if it's an OCR artifact.
+    SOURCE TEXT (First 3000 chars):
+    \"\"\"
+    {context_text}
+    \"\"\"
+    
+    EXTRACTED ENTITIES:
+    {entities_str}
+    
+    Identify any BLATANT ERRORS in the extractions. An error is:
+    1. type_error: The entity string is clearly NOT the stated Type (e.g. "patient" is not a PROCEDURE).
+    2. assertion_error: The text clearly states the OPPOSITE assertion (e.g. marked POSITIVE but text says "denies").
+    
+    Output strictly in JSON format matching exactly this schema:
+    {{
+       "flagged_entities": [
+          {{"index": <int matching the bracket number>, "error_type": "<type_error or assertion_error>", "reason": "<short string>"}}
+       ]
+    }}
+    If no errors, return an empty list for flagged_entities.
     """
-    
-    # Use environment variable for model, default to gemini if not explicitly set
-    model_name = os.getenv("LLM_MODEL", "gpt-5-mini")
     
     try:
         response = client.chat.completions.create(
             model=model_name,
             messages=[
-                {"role": "system", "content": "You are a clinical NLP evaluator. Output only strict JSON."},
+                {"role": "system", "content": "You are a clinical NLP evaluator. Output ONLY valid JSON."},
                 {"role": "user", "content": prompt}
             ],
             response_format={"type": "json_object"},
-            timeout=5.0  # Explicit timeout on the request level
+            timeout=15.0
         )
         result = json.loads(response.choices[0].message.content)
-        return {
-            'llm_entity_type_error': result.get('is_type_error', False)
-        }
+        
+        # Build mapping of index -> error dictionary
+        llm_flags = {}
+        for flag in result.get('flagged_entities', []):
+            idx = flag.get('index')
+            err_type = flag.get('error_type')
+            
+            if idx is not None and isinstance(idx, int):
+                llm_flags[idx] = {
+                    'llm_entity_type_error': err_type == 'type_error',
+                    'llm_assertion_error': err_type == 'assertion_error',
+                    'llm_reason': flag.get('reason', '')
+                }
+                
+        return llm_flags
     except Exception as e:
-        print(f"LLM Error: {e}")
+        print(f"LLM Batch Error: {e}")
         return {}

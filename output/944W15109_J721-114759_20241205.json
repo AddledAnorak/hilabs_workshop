@@ -3,7 +3,7 @@
   "entity_type_error_rate": {
     "MEDICINE": 0.0,
     "PROBLEM": 0.016666666666666666,
-    "PROCEDURE": 0.27586206896551724,
+    "PROCEDURE": 0.3103448275862069,
     "TEST": 0.0,
     "VITAL_NAME": 0.0,
     "IMMUNIZATION": 0.0,
@@ -13,8 +13,8 @@
     "SOCIAL_HISTORY": 0.0
   },
   "assertion_error_rate": {
-    "POSITIVE": 0.42105263157894735,
-    "NEGATIVE": 0.0,
+    "POSITIVE": 0.06842105263157895,
+    "NEGATIVE": 0.4666666666666667,
     "UNCERTAIN": 0.0
   },
   "temporality_error_rate": {
@@ -24,9 +24,1356 @@
     "UNCERTAIN": 0.0
   },
   "subject_error_rate": {
-    "PATIENT": 0.25,
+    "PATIENT": 0.0,
     "FAMILY_MEMBER": 0.0
   },
   "event_date_accuracy": 1.0,
-  "attribute_completeness": 0.8975468975468975
+  "attribute_completeness": 0.8975468975468975,
+  "file_statistics": {
+    "duplicate_rate": 0.047619047619047616,
+    "pct_medicine": 0.12987012987012986,
+    "pct_procedure": 0.2510822510822511,
+    "pct_positive": 0.8225108225108225,
+    "total_entities": 231,
+    "is_statistical_anomaly": false
+  },
+  "error_details": [
+    {
+      "entity": "mrn",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.059703927423994996,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mrn] acct",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17492108288987257,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute encephalopathy",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.39589719881788066,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "posterior pharyngitis",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4136086988419947,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hypothyroidism",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.39024646973508187,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "puree diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19757885606093423,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1374566738473243,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "do not place dentures",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21295673247582783,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "swelling in mouth",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14583458698322524,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow up with pcp within one week",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20930954897425458,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "expected discharge time: midday discharge disposition",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6100839489447263,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "home or self care",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22183683592861075,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "discharge summary notes",
+      "type": "IMMUNIZATION",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3821849347324703,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hypercholesterolemia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2786611495252433,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "advanced dementia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27639442795435154,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dehydration",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25388744197265783,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "constipation",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27431443028752867,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "anemia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1865477964183079,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hip fracture",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16051499940582006,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dnr",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09679031519726966,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "anxiety",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09051137117438038,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dementia",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1399689319998921,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hypothyroidism",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08798044736102846,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dysphagia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.047982742112747175,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "generalized weakness",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15970648943765373,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "gerd",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09274041487125796,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hyperlipidemia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09127658176928759,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hypertension",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14225375594517428,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encephalopathy",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11885080231303502,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "uti",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05490935676828585,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hip fracture",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11514214531217437,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "altered mental status",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.28659704344412856,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "obtunded",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10040998836705285,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "withdraw from pain",
+      "type": "MENTAL_STATUS",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15436974095491218,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "uti",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05490935676828585,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "antibiotic treatment",
+      "type": "MEDICINE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25807854987415824,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "antibiotic treatment",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25807854987415824,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "pt",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06324632342934543,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hip fracture",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11514214531217437,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "awake",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08969220349468222,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "alert",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15745519873395347,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "alert and oriented",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2825100791322754,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sodium",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0555891618801691,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "potassium",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07281841346479744,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bun",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.04622703097356023,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "creatinine",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15987374291135664,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "lactic acid",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13019895339983156,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "troponin",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09712084742246405,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "white blood cell count",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17863094656599834,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hemoglobin",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09900848544780667,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ua",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.02495683256527289,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "abdominal ct",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12997192628677431,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "constipation",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14680025166081648,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "enema",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06773398170887338,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dnr",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.056800007122637615,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cva",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.03436162020839771,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute change in mental status",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30112426421929,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "head ct",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14115234551158545,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "fluids",
+      "type": "MEDICINE",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.04540843964120544,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "antibiotics",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17035764141692392,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "alert",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13597542305184093,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "responsive",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08789428227471276,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dementia",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1827018488266173,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "normal mental status",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2414324413481642,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "swelling of upper palate and posterior pharynx",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3214091494941463,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "antibiotic",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16919397934616384,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "steroids",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13825785729332196,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "puree diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17761239372164275,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11835090240982465,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "physical therapy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15913651581512292,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "taking care of her mother for past 2 years",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2953120152927213,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "vital signs",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11250852714307763,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "puree diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17761239372164275,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diet",
+      "type": "PROCEDURE",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11835090240982465,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dentures",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1704083012287282,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "swelling",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1951665771483483,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cbc",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 1.0000000000000002,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cmp",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 1.0000000000000002,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29567254172223817,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "unlts",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14642837251595234,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2752269358521431,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "glucose ua",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24722450942450147,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2657416293587199,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ketones ua",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23896594642276173,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2782248349469918,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2735173291049853,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24285375656352096,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2089637491219702,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "gram negative rods, id and ast",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2216115211202993,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "supratentorial mass lesions",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25073419961451254,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bilateral opacification of the mastoid air cells",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.45265923260731106,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mucosal thickening of the proximal ascending colon and the cecum",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5539136148792312,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "right shoulder arthroplasty",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18624240669511707,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mucosal thickening of the proximal ascending colon and the cecum",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5539136148792312,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 1.0000000000000002,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3308632524683734,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "levaquin take 1 tablet (250 mg total) by mouth daily for 7 days",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5871467213808401,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16891932293907658,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26801327525621466,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6725528286046742,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "continue taking these medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8805307259043118,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1868066803487734,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "atorvastatin 40 mg tablet",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4291485257270089,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "lipitor",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13515741286980104,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bupropion sr 150 mg 12 hr tablet",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.42696677163689845,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "wellbutrin sr",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19889918720596625,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "meloxicam 7.5 mg tablet",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3753057024666278,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mobic",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13847988424254798,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "where to get your medications ask your nurse or doctor about these medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8496510788639924,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date][rk.1] with pcp within one week",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.552510045833916,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "home health",
+      "type": "SDOH",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3264536584331507,
+        "semantic_confidence": 0
+      }
+    }
+  ]
 }

@@ -2,7 +2,8 @@ import os
 import glob
 import json
 import pandas as pd
-import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def generate_report(output_dir="output", report_path="report.md"):
     json_files = glob.glob(os.path.join(output_dir, "*.json"))
@@ -12,92 +13,104 @@ def generate_report(output_dir="output", report_path="report.md"):
 
     data = []
     for f in json_files:
-        with open(f, 'r', encoding='utf-8') as file:
-            data.append(json.load(file))
+        try:
+            with open(f, 'r', encoding='utf-8') as file:
+                data.append(json.load(file))
+        except Exception as e:
+            print(f"Failed to load {f}: {e}")
 
     # Aggregate metrics
     df = pd.json_normalize(data)
     
-    # Calculate means for all numeric columns (error rates)
-    numeric_cols = df.select_dtypes(include=['number']).columns
+    # Calculate means
+    numeric_cols = [c for c in df.columns if '_error_rate.' in c]
     means = df[numeric_cols].mean()
 
     # Create error heatmap data
     heatmap_data = []
     
-    # Entity Type Errors
-    entity_cols = [c for c in numeric_cols if c.startswith('entity_type_error_rate.')]
-    for c in entity_cols:
-        heatmap_data.append({'Category': 'Entity Type', 'Dimension': c.split('.')[-1], 'Error Rate': means[c]})
-        
-    # Assertion Errors
-    assertion_cols = [c for c in numeric_cols if c.startswith('assertion_error_rate.')]
-    for c in assertion_cols:
-        heatmap_data.append({'Category': 'Assertion', 'Dimension': c.split('.')[-1], 'Error Rate': means[c]})
-        
-    # Temporality Errors
-    temporality_cols = [c for c in numeric_cols if c.startswith('temporality_error_rate.')]
-    for c in temporality_cols:
-        heatmap_data.append({'Category': 'Temporality', 'Dimension': c.split('.')[-1], 'Error Rate': means[c]})
-
-    # Subject Errors
-    subject_cols = [c for c in numeric_cols if c.startswith('subject_error_rate.')]
-    for c in subject_cols:
-        heatmap_data.append({'Category': 'Subject', 'Dimension': c.split('.')[-1], 'Error Rate': means[c]})
+    for c in numeric_cols:
+        parts = c.split('_error_rate.')
+        if len(parts) == 2:
+            cat = parts[0].replace('_', ' ').title()
+            dim = parts[1]
+            heatmap_data.append({'Category': cat, 'Dimension': dim, 'Error Rate': means[c]})
 
     heatmap_df = pd.DataFrame(heatmap_data)
     
-    # Generate Heatmap Plot
-    fig = px.density_heatmap(heatmap_df, x="Dimension", y="Category", z="Error Rate", 
-                             histfunc="avg", title="Clinical AI Output Error Heatmap",
-                             color_continuous_scale="Reds")
-    fig.write_image(os.path.join(output_dir, "heatmap.png"))
+    # Generate Seaborn Heatmap
+    if not heatmap_df.empty:
+        pivot_df = heatmap_df.pivot(index="Category", columns="Dimension", values="Error Rate").fillna(0)
+        
+        plt.figure(figsize=(12, 6))
+        sns.heatmap(pivot_df, annot=True, fmt=".1%", cmap="Reds", cbar_kws={'label': 'Error Rate'})
+        plt.title('Clinical AI Pipeline: Error Rates by Dimension', pad=20)
+        plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, "heatmap.png"), dpi=300)
+        plt.close()
+        
+    # Anomaly Plot
+    if 'file_statistics.duplicate_rate' in df.columns and 'file_statistics.is_statistical_anomaly' in df.columns:
+        plt.figure(figsize=(10, 6))
+        sns.scatterplot(
+            data=df, 
+            x='file_statistics.duplicate_rate', 
+            y='file_statistics.total_entities',
+            hue='file_statistics.is_statistical_anomaly',
+            palette={True: 'red', False: 'blue'},
+            s=100, alpha=0.7
+        )
+        plt.title('Isolation Forest Anomalies (File-Level)')
+        plt.xlabel('Duplication Rate within File')
+        plt.ylabel('Total Entities Extracted')
+        plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, "anomalies.png"), dpi=300)
+        plt.close()
 
     # Top weaknesses
     top_weaknesses = heatmap_df.sort_values(by="Error Rate", ascending=False).head(5)
 
     # Generate Markdown Report
-    report_content = f"""# Clinical AI Pipeline Evaluation Report
+    report_content = f"""# Advanced Clinical AI Pipeline Report (V2)
 
-## Quantitative Evaluation Summary
-Analyzed {len(json_files)} patient charts. 
+## Executive Summary
+Evaluation performed using the V2 framework incorporating Rule-Based heuristics, Vector Embeddings (Semantic Match), and Statistical Outlier detection.
+Analyzed {len(json_files)} patient charts.
 
 **Overall Pipeline Quality**:
-- Average Event Date Accuracy: {means.get('event_date_accuracy', 0):.2%}
-- Average Attribute Completeness: {means.get('attribute_completeness', 0):.2%}
+- Date Extraction Accuracy: {df.get('event_date_accuracy', pd.Series([0])).mean():.2%}
+- QA Attribute Completeness: {df.get('attribute_completeness', pd.Series([0])).mean():.2%}
+- Files flagged as Statistical Anomalies: {df.get('file_statistics.is_statistical_anomaly', pd.Series([False])).sum()}
 
-## Error Heatmap
-![Error Heatmap](output/heatmap.png)
+---
 
-### Error Rates by Dimension
+## 2D Error Matrix
+![Error Matrix](output/heatmap.png)
 
-| Category | Dimension | Error Rate |
-|----------|-----------|------------|
-"""
-    for _, row in heatmap_df.sort_values(by=['Category', 'Error Rate'], ascending=[True, False]).iterrows():
-        report_content += f"| {row['Category']} | {row['Dimension']} | {row['Error Rate']:.2%} |\n"
+## Isolation Forest Output (Chart-level Outliers)
+![Anomalies](output/anomalies.png)
 
-    report_content += """
+---
+
 ## Top Systemic Weaknesses
 """
     for i, (_, row) in enumerate(top_weaknesses.iterrows(), 1):
         report_content += f"{i}. **{row['Category']} - {row['Dimension']}**: Failed {row['Error Rate']:.2%} of the time.\n"
 
     report_content += """
-## Proposed Guardrails for Improving Reliability
-Based on the failure modes observed, the following programmatic guardrails should be implemented in the pipeline:
+---
+## Proposed Security & Reliability Guardrails
+1. **Semantic Embeddings Fence**: Block entities passing downstream when their `sentence-transformer` cosine similarity scores to their canonical type are <0.15.
+2. **Duplicate Extractor Limiter**: Abort pipeline if identical contextual triplets (Entity + Heading + Type) occur more than 5 times in a single chart.
+3. **Strict Span Framing**: If `assertion` is POSITIVE, strictly enforce a 5-token trailing lookup for NegEx triggers over the exact original OCR block index.
 
-1. **OCR Artifact Filtering**: Flag or remove entities whose text exactly matches section headers (e.g., "discharge summary", "medication list") or navigational cues ("patient", "encounter_date"). 
-2. **Negation Cross-Validation**: If `assertion` == `POSITIVE`, scan the surrounding 5-10 words for negation triggers ("denies", "no", "without", "negative for"). If found, flip assertion to `NEGATIVE` or flag for human review.
-3. **Temporal Inconsistency Checks**: If `temporality` == `CURRENT` but the heading contains "History" or text contains "past"/"resolved", flag as temporally ambiguous.
-4. **Subject Context Matching**: Ensure entities found under "Family History" sections enforce `subject_error_rate` context bounds (e.g., must be `FAMILY_MEMBER`).
-5. **Metadata Completeness Requirements**: Before passing `MEDICINE` entities downstream, validate that required QA attributes (STRENGTH, DOSE, ROUTE) are extracted, and fallback to regex-based parsing if missing.
+*Generated by V2 Evaluation Ensemble Engine.*
 """
 
     with open(report_path, 'w', encoding='utf-8') as f:
         f.write(report_content)
         
-    print(f"Report generated successfully to {report_path}")
+    print(f"V2 Report generated successfully to {report_path}")
 
 if __name__ == "__main__":
     generate_report()

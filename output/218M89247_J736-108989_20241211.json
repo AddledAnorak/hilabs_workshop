@@ -3,18 +3,18 @@
   "entity_type_error_rate": {
     "MEDICINE": 0.0,
     "PROBLEM": 0.0,
-    "PROCEDURE": 0.22388059701492538,
+    "PROCEDURE": 0.417910447761194,
     "TEST": 0.0,
     "VITAL_NAME": 0.0,
     "IMMUNIZATION": 0.0,
-    "MEDICAL_DEVICE": 0.0,
+    "MEDICAL_DEVICE": 0.25,
     "MENTAL_STATUS": 0.3333333333333333,
     "SDOH": 0.0,
     "SOCIAL_HISTORY": 0.0
   },
   "assertion_error_rate": {
-    "POSITIVE": 0.1583710407239819,
-    "NEGATIVE": 0.0,
+    "POSITIVE": 0.06334841628959276,
+    "NEGATIVE": 0.34782608695652173,
     "UNCERTAIN": 0.0
   },
   "temporality_error_rate": {
@@ -28,5 +28,1099 @@
     "FAMILY_MEMBER": 0.0
   },
   "event_date_accuracy": 1.0,
-  "attribute_completeness": 0.7033096926713949
+  "attribute_completeness": 0.7033096926713949,
+  "file_statistics": {
+    "duplicate_rate": 0.23404255319148937,
+    "pct_medicine": 0.02127659574468085,
+    "pct_procedure": 0.2375886524822695,
+    "pct_positive": 0.7836879432624113,
+    "total_entities": 282,
+    "is_statistical_anomaly": false
+  },
+  "error_details": [
+    {
+      "entity": "encounter 1",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2827463238420659,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "fundus evaluation",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2646868827029833,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "routine complete eye exam",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4123422923091465,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "routine complete eye exam",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4123422923091465,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mild frequent blurred near vision in the right eye",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4550535368052563,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "srx",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09229568088645938,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bti",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07781137463077004,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ha",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06533526030573472,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "eye pain",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2695191240015915,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diabetes type 2",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29019939109408605,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diabetes type 2",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29019939109408605,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bs",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1517375449329775,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "changes in vision",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.41718738151842244,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bs changes",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.341200408625721,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "old floaters",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17651479476825885,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "flashing",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12050838040858411,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "distortion",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2657637961295807,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 1",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2635798593817582,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 1",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2659668689099397,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 1",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2742959882797714,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12462910117239981,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "MENTAL_STATUS",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23081292925870192,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter for screening for eye and ear disorders",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.41177288324825456,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "nvd",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1658132450810077,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "nvd",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1658132450810077,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "fundus examination",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2378725614083492,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "csme",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19551835268009474,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "csme",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19551835268009474,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cataracts",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17592686611826364,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "vision changes",
+      "type": "PROBLEM",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26479925794895925,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "unstable",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1273196806289694,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter for screening for eye and ear disorders",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4220676746866135,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 2",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "age-related nuclear cataract, right eye",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3988912731134106,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "routine complete eye exam",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4123422923091465,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "routine complete eye exam",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4123422923091465,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mild frequent blurred near vision in the right eye",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4550535368052563,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "srx",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09229568088645938,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bti",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07781137463077004,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ha",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06533526030573472,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "eye pain",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2695191240015915,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diabetes type 2",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29019939109408605,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diabetes type 2",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29019939109408605,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bs",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1517375449329775,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "changes in vision",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.41718738151842244,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bs changes",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.341200408625721,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "old floaters",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17651479476825885,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "flashing",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12050838040858411,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "distortion",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2657637961295807,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "nvd",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1514121540980039,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "fundus examination",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2378725614083492,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "csme",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19551835268009474,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter for screening for eye and ear disorders",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5332478417042098,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "unstable",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13543626348799348,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "neovascularization",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.28210610438273975,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "age-related nuclear cataract, right eye",
+      "type": "PROBLEM",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3206431448307361,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cataracts",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22631017077863008,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter for screening for eye and ear disorders",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3894167745549154,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "e11.9",
+      "type": "VITAL_NAME",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17103245151205076,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "age-related nuclear cataract, right eye",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3988912731134106,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mrn",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13798245027240452,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mrn]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26494881447698815,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "comprehensive metabolic panel",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33618327038171514,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "comprehensive metabolic panel",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33618327038171514,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "type 2 diabetes mellitus with hypergl",
+      "type": "VITAL_NAME",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3954217682330608,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow-up encounter",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.35130248114115875,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "globulin (calc.)",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22706587240285916,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "calcium",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0843851614839845,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "patient communication",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4690773735343742,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow-up encounters",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3807864246748543,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diabetes",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16560240657883055,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3572034129179899,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "release to patient",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29119215403289667,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27011144838754064,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2615355245337754,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "reviewers list",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.232100166856428,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5110141623969884,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mrn",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13798245027240452,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mrn]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26494881447698815,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hemoglobin a1c",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11767653902643793,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow-up encounter",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.38096213184154415,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "patient communication",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4913180706682078,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow-up encounters",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.999999999999998,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow-up encounters",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4034300707237561,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "vork",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27373307102772443,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "vork",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27373307102772443,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "glucose",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10731393545177638,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.38592608140441076,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3375768893135052,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "outpatient",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0
+      }
+    }
+  ]
 }

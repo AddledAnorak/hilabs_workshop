@@ -3,18 +3,18 @@
   "entity_type_error_rate": {
     "MEDICINE": 0.0,
     "PROBLEM": 0.0,
-    "PROCEDURE": 0.21428571428571427,
-    "TEST": 0.0,
+    "PROCEDURE": 0.2857142857142857,
+    "TEST": 0.16666666666666666,
     "VITAL_NAME": 0.0,
     "IMMUNIZATION": 0.0,
     "MEDICAL_DEVICE": 0.0,
     "MENTAL_STATUS": 0.0,
     "SDOH": 0.0,
-    "SOCIAL_HISTORY": 0.0
+    "SOCIAL_HISTORY": 1.0
   },
   "assertion_error_rate": {
-    "POSITIVE": 0.2631578947368421,
-    "NEGATIVE": 0.0,
+    "POSITIVE": 0.06578947368421052,
+    "NEGATIVE": 0.6,
     "UNCERTAIN": 0.0
   },
   "temporality_error_rate": {
@@ -28,5 +28,231 @@
     "FAMILY_MEMBER": 0.0
   },
   "event_date_accuracy": 1.0,
-  "attribute_completeness": 0.8507751937984497
+  "attribute_completeness": 0.8507751937984497,
+  "file_statistics": {
+    "duplicate_rate": 0.06976744186046512,
+    "pct_medicine": 0.09302325581395349,
+    "pct_procedure": 0.32558139534883723,
+    "pct_positive": 0.8837209302325582,
+    "total_entities": 86,
+    "is_statistical_anomaly": false
+  },
+  "error_details": [
+    {
+      "entity": "acute abdominal pain",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.45999568137890773,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "metformin 500 mg",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5557801296220778,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "patient to return to [facility_name] for follow-up on [encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5235016570687686,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "colon cancer screening",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.42115921051312777,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "anesthesia record",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.34686685457814853,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "blood pressure monitoring",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24721073437696298,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29736589155396054,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.32799736277833247,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "digital exam",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1485904371084467,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 2",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "colon cancer screening",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6114300436487591,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "polyp transverse colon x2",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5784014399226952,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ulceration with inflammation with changes",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30786748094854827,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ischemic colitis",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31197129407298446,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "tubular adenoma(s)",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12028342268591273,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27574781887500704,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29193050539937127,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33735321266561974,
+        "semantic_confidence": 0
+      }
+    }
+  ]
 }

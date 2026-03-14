@@ -4,4 +4,8 @@ pandas
 plotly
 python-dotenv
 tqdm
-kaleido
+scikit-learn
+sentence-transformers
+numpy
+matplotlib
+seaborn

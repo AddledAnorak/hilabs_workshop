@@ -3,7 +3,7 @@
   "entity_type_error_rate": {
     "MEDICINE": 0.0,
     "PROBLEM": 0.0,
-    "PROCEDURE": 0.045454545454545456,
+    "PROCEDURE": 0.09090909090909091,
     "TEST": 0.0,
     "VITAL_NAME": 0.0,
     "IMMUNIZATION": 0.0,
@@ -13,8 +13,8 @@
     "SOCIAL_HISTORY": 0.0
   },
   "assertion_error_rate": {
-    "POSITIVE": 0.08,
-    "NEGATIVE": 0.0,
+    "POSITIVE": 0.1,
+    "NEGATIVE": 0.2727272727272727,
     "UNCERTAIN": 0.0
   },
   "temporality_error_rate": {
@@ -28,5 +28,208 @@
     "FAMILY_MEMBER": 0.0
   },
   "event_date_accuracy": 1.0,
-  "attribute_completeness": 0.8387096774193549
+  "attribute_completeness": 0.8387096774193549,
+  "file_statistics": {
+    "duplicate_rate": 0.20967741935483872,
+    "pct_medicine": 0.03225806451612903,
+    "pct_procedure": 0.3548387096774194,
+    "pct_positive": 0.8064516129032258,
+    "total_entities": 124,
+    "is_statistical_anomaly": false
+  },
+  "error_details": [
+    {
+      "entity": "encounter 1 electronically signed by",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.39376803422449086,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "office visit",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22417791691531672,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "intermediate stage nonexudative age-related macular degeneration of left eye",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5042958589608134,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "age-related macular degeneration",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33240639595430865,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dry os",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.35028816128465845,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17086612632649498,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "incipient age-related cataracts",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3519497100277162,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "monitor",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17302846277412343,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "corneal scar os, small",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30822160454416514,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "areds ait",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18403444110924075,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3508352569974189,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dermatochalasis",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4294308200310418,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "c/d ratio",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13259040750503004,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mod rpe mottling",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23200973856437496,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter status electronically signed",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6395233156573749,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "intermediate stage nonexudative age-related macular degeneration of left eye combined form of age-related cataract, both eyes",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7189803913982926,
+        "semantic_confidence": 0
+      }
+    }
+  ]
 }

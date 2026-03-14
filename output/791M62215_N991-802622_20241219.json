@@ -1,20 +1,20 @@
 {
   "file_name": "791M62215_N991-802622_20241219.json",
   "entity_type_error_rate": {
-    "MEDICINE": 0.012658227848101266,
-    "PROBLEM": 0.0,
-    "PROCEDURE": 0.1527777777777778,
+    "MEDICINE": 0.06329113924050633,
+    "PROBLEM": 0.00558659217877095,
+    "PROCEDURE": 0.2361111111111111,
     "TEST": 0.0,
-    "VITAL_NAME": 0.0,
+    "VITAL_NAME": 0.025,
     "IMMUNIZATION": 0.0,
     "MEDICAL_DEVICE": 0.0,
-    "MENTAL_STATUS": 0.0,
-    "SDOH": 0.0,
-    "SOCIAL_HISTORY": 0.0
+    "MENTAL_STATUS": 0.07692307692307693,
+    "SDOH": 0.18181818181818182,
+    "SOCIAL_HISTORY": 0.045454545454545456
   },
   "assertion_error_rate": {
-    "POSITIVE": 0.4064272211720227,
-    "NEGATIVE": 0.0,
+    "POSITIVE": 0.10396975425330812,
+    "NEGATIVE": 0.0673076923076923,
     "UNCERTAIN": 0.0
   },
   "temporality_error_rate": {
@@ -24,9 +24,3315 @@
     "UNCERTAIN": 0.0
   },
   "subject_error_rate": {
-    "PATIENT": 0.06987577639751552,
+    "PATIENT": 0.0,
     "FAMILY_MEMBER": 0.125
   },
   "event_date_accuracy": 1.0,
-  "attribute_completeness": 0.9054122407688416
+  "attribute_completeness": 0.9054122407688416,
+  "file_statistics": {
+    "duplicate_rate": 0.10773899848254932,
+    "pct_medicine": 0.11987860394537178,
+    "pct_procedure": 0.3277693474962064,
+    "pct_positive": 0.802731411229135,
+    "total_entities": 659,
+    "is_statistical_anomaly": false
+  },
+  "error_details": [
+    {
+      "entity": "dc summary",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1755385065160045,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "resp \uf114 inpatient records and er",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12982197089077085,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "discharge summary signed",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3774331207594303,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 1",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "discharge summary signed",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.38206847325570426,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "inpatient code status",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2571078909425045,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "altered mental state",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31496723990310627,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "low-speed fender benders",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1825972165314376,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "altered mental state",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31496723990310627,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "stroke",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12207302520446839,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "awake",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10708614811150931,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "alert oriented x 4",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26471147508168946,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ct",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1005709015109446,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cta of head",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1655191017759379,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "intracranial hemorrhage",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17924642018733639,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "nihss",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06437669487051433,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "unable to answer any question",
+      "type": "MENTAL_STATUS",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23427595404092513,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "right sided neglect",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19069630502602736,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "left gaze partial palsy",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15660210737365124,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mri brain",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10081779639869613,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute infarction",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24615484770079363,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "remote infarction",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21836527844093,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "white matter changes",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19466897339352254,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "eeg",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.040158590130671405,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bilateral independent occasional-to-frequent (~10-20% of the record) intermittent slowing in the right > left fronto-temporal regions",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.47826756083095134,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "focal neuronal dysfunction in these areas",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3292686876698094,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sharp wave discharge in the right fronto-temporal region",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3688524814379444,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "epileptogenic focus / cortical irritability",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18381768632976103,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "seizures",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08956723964020914,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "keppra",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.03958879520781903,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "aspirin",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11105517779233523,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "plavix",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.043036895724372186,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "lumbar puncture",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1088746509457669,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "echo cardiogram",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1133889423835967,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "outpatient follow up with center for senior health acute",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3663603191751704,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute on chronic, unstable/uncontrolled",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27795727432853934,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute confusional state with neglect - transient",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.38206199328257623,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute ischemic stroke",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22103910070427715,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mri brain",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10081779639869613,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cardio echo",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11801056376378204,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "small vessel disease",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17127236255766637,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "statin",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17802890620116485,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "aspirin",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13112675375056848,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "plavix",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07670641964479348,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hypertension",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17340328200125277,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hyzaar dc",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10600463243894566,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "losartan 100 mg",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16308454550895807,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "combo medications",
+      "type": "MEDICINE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21300224087761266,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "seizure disorder",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18356380957654894,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "keppra 500 mg bid",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14069549056589484,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "prolonged eeg monitoring",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25041623814583575,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "no driving until cleared",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26259022935436965,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bathing",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15412634750786977,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mri sinus",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17326458572401054,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow up result outpatient",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.276411652720122,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4189053056638812,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hypertension",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30409844751372006,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "coming up with patient discharge plan",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5607273727032831,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "coming up with patient discharge plan",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5607273727032831,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "discharge medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8698946583063714,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7077395065516141,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "start taking these medications",
+      "type": "MEDICINE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8794573264569767,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "keppra take 1 tablet (500 mg) by mouth 2 times daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7256444425787035,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cozaar take 1 tablet (100 mg) by mouth daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6744386324737488,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "rdw",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.054372742233207795,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "losartan-hydrochlorothiazide 100-25 mg tablet",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5970100476615586,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hyzaar",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19690760761591547,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "Transitional care management services with the following required elements: Communication (direct contact, telephone, electronic) with the patient and/or caregiver within 2 business days of discharge At least moderate level of medical decision making during the service period Face-to-face visit, within 14 calendar days of discharge",
+      "type": "PROCEDURE",
+      "assertion": "",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.46888166586518193,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "Transitional care management services with the following required elements: Communication (direct contact, telephone, electronic) with the patient and/or caregiver within 2 business days of discharge High level of medical decision making during the service period Face-to-face visit, within 7 calendar days of discharge",
+      "type": "PROCEDURE",
+      "assertion": "",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.451397129564597,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "did you get medications filled and taking them as instructed from discharge",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5879271238086595,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "are you following your discharge instructions from your hospital stay",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6097824218722323,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24245332905380065,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list at discharge",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.114251678817048,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10379139498276094,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 2",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 2 [patient_name] mrn",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.548956831182289,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "attending tele- stroke team note",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33265083698369374,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "contused",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16226892690806352,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "not consistently following commands",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2709470703623358,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "crossing midline",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15969869355469604,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "with a family member who is not present in the ed",
+      "type": "SDOH",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.45547033145803106,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "us",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06573923584158528,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "stight htn",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12838857874139065,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "nihss on arrival",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.47995869155628385,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "pre-admission modified rankin score",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22795566393343797,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "significant disability",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29867688979533163,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "able to carry out all usual duties and activities",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.44122888952790384,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "slight disability",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27863203324818886,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "unable to carry out all previous activities, but able to look after own affairs without assistance",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6186204758081363,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "moderate disability",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.32570335748325,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "requiring some help, but able to walk without assistance",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5427564746516017,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "moderately severe disability",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33711108848767185,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "unable to walk without assistance",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5147742447134379,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "unable to attend to own - bodily needs without assistance",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5611854267181208,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "severe disability",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3234127771668262,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bedridden",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07303997311474285,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "incontinent",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13211143448055693,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "requiring constant nursing care and attention",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3422785706170049,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "home medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8332397269478551,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hypertension",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30409844751372006,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "tonsillectomy",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2643392042184756,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "injection iv my, iv my, intraveivous, qiu priv",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3423741573869265,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sodium chloride 0.9 % infusion, 5-250 ml/hr, intravenous, prn, [provider_name]",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8016218294676638,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sodium chloride 0.9 % infusion, 50 ml/hr, intravenous, continuous",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5564715748962341,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sodium chloride 0.9% (ns) flush 5-40 ml, 5-40 ml, intravenous, q12h, [provider_name]",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7798499882708867,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sodium chloride 0.9% (ns) flush 5-40 ml, 5-40 ml, intravenous, prn, [provider_name]",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8011336510305284,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22449531331172445,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "omeprazole",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21054054686008805,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "tramadol",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23870696696790145,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "never smoked",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.291778176202363,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "never used smokeless tobacco",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4694050802339474,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "etoh",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09296290049879133,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "recreational drug use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2875087050309675,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "poct glucose meter",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3309939986153196,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3786016824039585,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "limb holds 90 (or 45) degrees for full 10 seconds",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.47338185089031476,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "limb holds 90 (or 45) degrees for full 10 seconds",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.46879064675759435,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "limb holds 90 (or 45) degrees for full 10 seconds",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4757836049455669,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "limb holds 90 (or 45) degrees for full 10 seconds",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4788809931780172,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cbc",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14471563626473982,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3018934988841056,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3129034338089136,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3277625522331276,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.28694323915799136,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "protime/inr & ptt",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.38148152412848757,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ct perfusion",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30591233111894034,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "slow flow",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1433159251495083,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "low nih",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10296423189083323,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "lvo",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11248333720444206,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ct abnormaity",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18707288787144422,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ht risk",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16742884322750318,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "seizure",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12106728208601067,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "thin eeg",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12042380578763591,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3611422214167727,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "oxygen",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09368417879176634,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "rectal asa",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12832617328852663,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "eeg",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05043144486103896,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mri brain",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09183248041723742,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute stroke",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16103691854047084,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "thrombolysis",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14437746824762163,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter 3",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "inpatient follow-up",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2572422598960303,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ams",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1710615591866819,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "transition of care inpatient transition to home (own)",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33888737687741183,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "30 day readmission",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16427735557853332,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "in patient admissions in last 12 months",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31620368730854753,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "altered mental state",
+      "type": "PROBLEM",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3138956923504009,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "low-speed fender benders",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18185221346195105,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "altered mental state",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3138956923504009,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "stroke",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09843811609173757,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "awake",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0980277035300426,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "alert oriented x 4",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25940715071813064,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "functionally independent",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25844410721280514,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ct",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08283505830351559,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cta of head",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15163581675243895,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "intracranial hemorrhage",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17602108990004142,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "right sided neglect",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17262344620567263,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "left gaze partial palsy",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15330448339618594,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mri brain",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08532689742184743,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute infarction",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2295909040205719,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "remote infarction",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23674577762105412,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "white matter changes",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20334261934582054,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "eeg",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.03477972746465939,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "intermittent slowing in the right > left fronto-temporal regions",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4039165575762623,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "focal neuronal dysfunction",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19965428905754434,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sharp wave discharge in the right fronto-temporal region",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3871184035862078,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "epileptogenic focus / cortical irritability",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1733605391831488,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "seizures",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09704734419716969,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "keppra",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.037724818546594645,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "aspirin",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10958245371196396,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "plavix",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.04183596432105915,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "fall risk",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08937020780247468,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "lumbar puncture",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11317458806686205,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "echo cardiogram",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09976817630182774,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "outpatient follow up with center for senior health",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30912973246269254,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute confusional state with neglect transient",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.34503589247503036,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "acute ischemic stroke",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1742464883584824,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ct head",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12233081644779828,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mri brain cardio",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17218843744449966,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "echo",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08673476780343332,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "white matter small vessel disease",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22931033619913183,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "statin",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17225273019343176,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "aspirin",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09444753166006634,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "plavix",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05674793665032668,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hypertension",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15684297927360202,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hyzaar",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07606743230021609,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "losartan 100 mg",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11438036108698145,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "combo medications",
+      "type": "MEDICINE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20505360954709362,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "seizure disorder",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19156207695269495,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "keppra 500 mg bid",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09227059014417173,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "prolonged eeg monitoring",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22630948575347962,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "no driving until cleared",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24441167681979958,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "bathing",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1313407233995359,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "mri sinus",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13862019016057142,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow up result outpatient",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30086215246593,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow up with center for senior health",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3012617406357634,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sbh pos",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10422089046899982,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "follow up with neurology",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22264194639817883,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "eeg",
+      "type": "PROCEDURE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06952215917849837,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "echo",
+      "type": "PROCEDURE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08673476780343332,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "assistance needed with adl's",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24044730948736967,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "walker oral nutritional supplements",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25504006941157525,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.37669225215858804,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "walker",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11092977617283686,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "adls",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08962733003321054,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ensure plus",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13754774698941863,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "magic cups",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0710255853142448,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "regular diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12022301575907829,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "discomfort",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11920485764379854,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "pain",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09507707996030687,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "fever",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10339622701183979,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "infection",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1259159161096966,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "current medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2192511295154966,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "keppra 500mg",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05013665268475943,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cozaar 100mg",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09826347319785388,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "hyzaar 100-25 mg",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08165114149284447,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ip f/u on [encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3058559941942345,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "days from discharge to initial face-to-face visit",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3083501759071459,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "office visit",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15030196100683815,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "reconciliation of medication completed",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2420051743713232,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "transitional care nurse assessment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2586439507255671,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "stroke like symptoms",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1483841712880112,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "current medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "current medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1624335352252087,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "calcium + d(calcium-vitamin d-vitamin k) 500-1000-40 mg-unt-mcg tablet chewable as directed orally",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5959147264689256,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "disability parking permit na na na na 1 time",
+      "type": "SDOH",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24800446310827776,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "vitamin d3 25 mcg tablet 1 tab(s) orally once a day",
+      "type": "VITAL_NAME",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6931038157956828,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "current medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33202840790119326,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "vitamin b12 1000 mcg tablet extended release 1 tablet orally once a day",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6771537024446125,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list reviewed and reconciled with the patient",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.49179743666420017,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "medication list reviewed and reconciled",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.41996374225945793,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "left temporal lobe infarction",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.248575368108781,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "uterovaginal prolapse, unspecified",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33281821350284463,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cystocele, midline",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1523408559213407,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "ekg",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09524377300731494,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "tonsillectomy/adenoidectomy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3567667687478212,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cataract extraction",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3060120557741861,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "deceased",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3646805109127256,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "deceased",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3646805109127256,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "deceased",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3646805109127256,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "druse abuse",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1812819181829617,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "nicotine/tobacco",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13861055175522224,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "never smoker",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14474212667851136,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "alcohol screen",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2049495960935648,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "drink containing alcohol in the past year",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3229971292622634,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "alcohol use detail",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27983164292112317,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "drug use (ilicit)",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17488053833583742,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "have you used drugs for reasons other than medical in the last 12 months",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3616712538641522,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "advanced directives",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1859164254126737,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dpoa for health care",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1945367329288065,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dietary: unrestricted diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22319491355391052,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1020476406167231,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "caffeine",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09903411936331889,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "green tea",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11576101611624076,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "single",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09747145777648056,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "widowed",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07268645105381419,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "legal assistant",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18702289123300014,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "exercise",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11828424821035528,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "at work/mannis legal services",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20747071892499697,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "travel outside us",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14635545050729257,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sexually active",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16649580820283047,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "dental care",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2451877849307702,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "sons:3",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08587617154708434,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "protestant/christian",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true,
+        "subject_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1593861330290053,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "cat (s) 6 dog (s)",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10947048248160131,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "home smoke detectors use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2586752603176254,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "stomach upset",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23726416155022398,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "diastolic blood pressure",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.010349469657908748,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "calcium + d tablet chewable, 500-1000-40 mg-unt-mcg, as directed, orally",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6041520118855737,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded.",
+      "type": "PROCEDURE",
+      "assertion": "",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3134793318579317,
+        "semantic_confidence": 0
+      }
+    },
+    {
+      "entity": "eclinicalworks emr/pm software",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.28532080871799753,
+        "semantic_confidence": 0
+      }
+    }
+  ]
 }
