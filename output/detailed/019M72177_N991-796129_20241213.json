@@ -1,0 +1,3446 @@
+{
+  "file_name": "019M72177_N991-796129_20241213.json",
+  "entity_type_error_rate": {
+    "MEDICINE": 0.02666666666666667,
+    "PROBLEM": 0.20535714285714285,
+    "PROCEDURE": 0.6190476190476191,
+    "TEST": 0.05263157894736842,
+    "VITAL_NAME": 0.34375,
+    "IMMUNIZATION": 0.0,
+    "MEDICAL_DEVICE": 0.21052631578947367,
+    "MENTAL_STATUS": 0.5,
+    "SDOH": 0.5,
+    "SOCIAL_HISTORY": 0.4857142857142857
+  },
+  "assertion_error_rate": {
+    "POSITIVE": 0.06666666666666667,
+    "NEGATIVE": 0.17721518987341772,
+    "UNCERTAIN": 0.0
+  },
+  "temporality_error_rate": {
+    "CURRENT": 0.25474254742547425,
+    "CLINICAL_HISTORY": 0.05128205128205128,
+    "UPCOMING": 0.0,
+    "UNCERTAIN": 0.0
+  },
+  "subject_error_rate": {
+    "PATIENT": 0.0,
+    "FAMILY_MEMBER": 0.0
+  },
+  "event_date_accuracy": 1.0,
+  "attribute_completeness": 0.874098124098124,
+  "file_statistics": {
+    "duplicate_rate": 0.13203463203463203,
+    "pct_medicine": 0.16233766233766234,
+    "pct_procedure": 0.2727272727272727,
+    "pct_positive": 0.8116883116883117,
+    "total_entities": 462,
+    "is_statistical_anomaly": false
+  },
+  "coherence_statistics": {
+    "coherence_omission_warnings": [
+      {
+        "medication": "lisinopril 5 mg tablet commonly known as: zestril take 1 tablet by mouth once daily",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure"
+        ]
+      },
+      {
+        "medication": "atorvastatin, 40 mg, at bedtime",
+        "missing_indication_context": [
+          "hyperlipidemia",
+          "coronary artery disease",
+          "myocardial infarction"
+        ]
+      },
+      {
+        "medication": "metoprolol succinate 25 mg oral daily",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure",
+          "atrial fibrillation"
+        ]
+      },
+      {
+        "medication": "metoprolol succinate er, 25 mg, daily",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure",
+          "atrial fibrillation"
+        ]
+      },
+      {
+        "medication": "lisinopril 5 mg tablet",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure"
+        ]
+      },
+      {
+        "medication": "lisinopril",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure"
+        ]
+      },
+      {
+        "medication": "lisinopril (zestril) 5 mg tablet",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure"
+        ]
+      },
+      {
+        "medication": "empagliflozin (jardiance) 10 mg tablet",
+        "missing_indication_context": [
+          "diabetes",
+          "heart failure"
+        ]
+      },
+      {
+        "medication": "atorvastatin calcium 40 mg oral at bedtime",
+        "missing_indication_context": [
+          "hyperlipidemia",
+          "coronary artery disease",
+          "myocardial infarction"
+        ]
+      },
+      {
+        "medication": "metoprolol succinate er (toprol xl) 25 mg 24 hr tablet:: sig: take 1 tablet by mouth once daily",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure",
+          "atrial fibrillation"
+        ]
+      },
+      {
+        "medication": "atorvastatin 40 mg tablet commonly known as: lipitor take 1 tablet by mouth daily at bedtime",
+        "missing_indication_context": [
+          "hyperlipidemia",
+          "coronary artery disease",
+          "myocardial infarction"
+        ]
+      },
+      {
+        "medication": "lisinopril 5 mg oral daily",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure"
+        ]
+      },
+      {
+        "medication": "metoprolol succinate er 25 mg 24 hr tablet commonly known as: toprol xl take 1 tablet by mouth once daily",
+        "missing_indication_context": [
+          "hypertension",
+          "heart failure",
+          "atrial fibrillation"
+        ]
+      },
+      {
+        "medication": "atorvastatin (lipitor) 40 mg tablet",
+        "missing_indication_context": [
+          "hyperlipidemia",
+          "coronary artery disease",
+          "myocardial infarction"
+        ]
+      }
+    ],
+    "coherence_score": 0.8
+  },
+  "error_details": [
+    {
+      "entity": "palliative care inpatient records and er",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17714157192242924,
+        "semantic_confidence": 0.150141116591212
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "agmc admit notice",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.047803597084381894,
+        "semantic_confidence": 0.1261408592788277
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "discharge summary signed",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4170110897237753,
+        "semantic_confidence": 0.2492689211210734
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "c3 highest readmission risk score",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.46822858021095287,
+        "semantic_confidence": 0.14864168188304197
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "30 day readmissions risk score",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4342497229701456,
+        "semantic_confidence": 0.12369906525876069
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "internally validated risk model",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31934722680531674,
+        "semantic_confidence": 0.15003340455555475
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "medication orders",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2413375613965209,
+        "semantic_confidence": 0.27541033479771293
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "readmission",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29061198960549167,
+        "semantic_confidence": 0.4616110952328366
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter 1",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.11158836658764983
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "discharge summary signed",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31852286073218705,
+        "semantic_confidence": 0.2492689211210734
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "mrn",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11011002055159885,
+        "semantic_confidence": 0.46029893260644966
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "mrn",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11011002055159885,
+        "semantic_confidence": 0.46029893260644966
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "readmission risk score",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.45993663005333724,
+        "semantic_confidence": 0.17578801534200872
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "30 day readmissions risk score",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.46830895050998794,
+        "semantic_confidence": 0.12369906525876069
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "internally validated risk model",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3038781009852078,
+        "semantic_confidence": 0.15003340455555475
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "readmission",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3118819345334387,
+        "semantic_confidence": 0.4616110952328366
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "admission information",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 1.0000000000000027,
+        "semantic_confidence": 0.31909811736362115
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "copd exacerbation",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24524691689084235,
+        "semantic_confidence": 0.07077969689953263
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "pfts",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.058686631091936066,
+        "semantic_confidence": 0.19654813240869495
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hospital problems",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.32338998125691765,
+        "semantic_confidence": 0.1480444383599722
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "follow-up appointment when: in 1 week",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.722703276407294,
+        "semantic_confidence": 0.273314208779283
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient/parents to call for appointment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7618919194911125,
+        "semantic_confidence": 0.30330352079351336
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient/parents to call for appointment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8688961732500656,
+        "semantic_confidence": 0.30330352079351336
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "follow-up appointment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5274374208449413,
+        "semantic_confidence": 0.3490850843986734
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "follow-up appointment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5274374208449413,
+        "semantic_confidence": 0.3490850843986734
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "follow-up appointment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4523820443883782,
+        "semantic_confidence": 0.3490850843986734
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "follow-up appointment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3446023282089335,
+        "semantic_confidence": 0.3490850843986734
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "follow-up appointment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.38015377671674494,
+        "semantic_confidence": 0.3490850843986734
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2306184603459866,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3498090924831472,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "primary care physician in 1 week",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3646201446033946,
+        "semantic_confidence": 0.36642108144390895
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "follow-up appointments already scheduled with a [facility_name] provider",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7576678974692428,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "future appointments",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3810999779226677,
+        "semantic_confidence": 0.2747601497735197
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7243768027323425,
+        "semantic_confidence": 0.29183950687844784
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "start taking these medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7724134230075618,
+        "semantic_confidence": 0.2109658009573706
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2172971714184245,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21999691875012128,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21402328007070298,
+        "semantic_confidence": 0.10828333720444253
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "future appointments",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20752853507598742,
+        "semantic_confidence": 0.2747601497735197
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "aspirin, enteric coated take 1 tablet by mouth once daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6805463639206789,
+        "semantic_confidence": 0.3957960493428482
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "lasix take 1 tablet by mouth once daily",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6788376353118496,
+        "semantic_confidence": 0.11519302127166821
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "albuterol 2.5 mg /3 ml (0.083 %) nebulizer solution commonly known as: proventil use 3 ml via nebulizer every 6 hours as needed for wheezing/shortness of breath",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5689555796275604,
+        "semantic_confidence": 0.31594698760069667
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bp",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.030475814673387294,
+        "semantic_confidence": 0.12017643374940437
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "systolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11155777904150965,
+        "semantic_confidence": 0.8466420572917822
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diastolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1188232586095014,
+        "semantic_confidence": 0.819750362716774
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "pulse",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07876674317627494,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "temp",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05757223711984696,
+        "semantic_confidence": 0.4801384258009729
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "resp",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11924362846024034,
+        "semantic_confidence": 0.4517931774392998
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ht",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05708641827457742,
+        "semantic_confidence": 0.4201313164660598
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "wt",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05504025440828531,
+        "semantic_confidence": 0.25221662987171567
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "spo2",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05474408686686901,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bmi",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05485888980481466,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "chronically ill-appearing",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21954391635816128,
+        "semantic_confidence": 0.4353913563991469
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "acutely ill-appearing",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.179885319447573,
+        "semantic_confidence": 0.3827061922914242
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "mildly dyspneic at rest",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17330965712631377,
+        "semantic_confidence": 0.11112415402002446
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "rashes",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10934644737369945,
+        "semantic_confidence": 0.16340706139274563
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "lesions",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1462035105553873,
+        "semantic_confidence": 0.2580161403092892
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "jugulovenous distention",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2121104738721857,
+        "semantic_confidence": 0.15666138393070697
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "carotid bruits",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14851648313538793,
+        "semantic_confidence": 0.17543245010938952
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "pulse",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07876674317627494,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "significantly diminished breath sounds bilaterally in entry",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3158553670261219,
+        "semantic_confidence": 0.19980018560382704
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "rubs",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06823593536621023,
+        "semantic_confidence": 0.19166059082738496
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "murmurs",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08071753601743056,
+        "semantic_confidence": 0.19356396643041468
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "gallops",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09449935497848094,
+        "semantic_confidence": 0.21422470652260417
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "masses",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11405539179691614,
+        "semantic_confidence": 0.09499687857089256
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "organomegaly",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14232809558450285,
+        "semantic_confidence": 0.29715647803452505
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "deformities",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17101133027496443,
+        "semantic_confidence": 0.09879210314784413
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "edema",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0649349527561315,
+        "semantic_confidence": 0.39960476084515273
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "clubbing",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10712563165791666,
+        "semantic_confidence": 0.2635406665932619
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "skin discoloration",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23900210070226385,
+        "semantic_confidence": 0.22519308589719753
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ulcers",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08043521748842017,
+        "semantic_confidence": 0.5072405798732038
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bun",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.056520594861009556,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "calcium",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08775459303567915,
+        "semantic_confidence": 0.9999999999999999
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "copd",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07219673091872984,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "advanced encounter info",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2507313926790847,
+        "semantic_confidence": 0.09649905262986877
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22187933648676955,
+        "semantic_confidence": 0.29183950687844784
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "metoprolol succinate 25 mg oral daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4888627225788688,
+        "semantic_confidence": 0.7111483041247832
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "medication list at discharge",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 1.0000000000000007,
+        "semantic_confidence": 0.2162386707523618
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "medication list",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6728458648176355,
+        "semantic_confidence": 0.29183950687844784
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "quick search",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.03673036109620297,
+        "semantic_confidence": 0.14313528399648945
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "palliative care inpatient records and er",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15035652797072643,
+        "semantic_confidence": 0.150141116591212
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "agmc admit notice",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06221408413691471,
+        "semantic_confidence": 0.1261408592788277
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "discharge",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07043804291963315,
+        "semantic_confidence": 0.1541325225223359
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "discharge",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07043804291963315,
+        "semantic_confidence": 0.1541325225223359
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "copd",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06605373182023026,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ef",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.024033866534662517,
+        "semantic_confidence": 0.15495830581446052
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "shortness of breath",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2423576428345008,
+        "semantic_confidence": 0.26965665080173074
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "walk to the bathroom without difficulty",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29632615403461676,
+        "semantic_confidence": 0.11204656835378815
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "exertional dyspnea",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12579179171389068,
+        "semantic_confidence": 0.2911446052719763
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "rescue inhaler",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1748282056636353,
+        "semantic_confidence": 0.8193403319577054
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hypoxemic to 82%",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13781785797277482,
+        "semantic_confidence": 0.33662150564184434
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hypoxemic",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08780006719934019,
+        "semantic_confidence": 0.3630179522553515
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "dyspnea at rest",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17801921467606394,
+        "semantic_confidence": 0.33906422423284577
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "quit alcohol consumption",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13989899696200486,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "other substance use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19489731005487285,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bp",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.044025149951375596,
+        "semantic_confidence": 0.12017643374940437
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "systolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10999488443328749,
+        "semantic_confidence": 0.8466420572917822
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diastolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12377662727103822,
+        "semantic_confidence": 0.819750362716774
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "heart rate",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21624652575011805,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "spo2",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.04032359823842629,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "respiratory rate",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1852727765170514,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ekg",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.03056824722735911,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "prolonged qtc",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10540056631463311,
+        "semantic_confidence": 0.23003626915588354
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "solumedrol 125mg",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07196332837474174,
+        "semantic_confidence": 0.21446110296951135
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "duonebs",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10780182303064448,
+        "semantic_confidence": 0.0868310204578437
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "shortness of breath",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2423576428345008,
+        "semantic_confidence": 0.26965665080173074
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bipap",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08059308702664204,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "covid/flu/rsv",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.043453834726904804,
+        "semantic_confidence": 0.4081341065939883
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "cr",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06042484851232452,
+        "semantic_confidence": 0.42913774127195925
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diarrhea",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08993699784876727,
+        "semantic_confidence": 0.07728306349400667
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROBLEM"
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications on file prior to encounter",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999998,
+        "semantic_confidence": 0.2406954325891576
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6937612567664665,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "chf (congestive heart failure)",
+      "type": "IMMUNIZATION",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4903843120325483,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ef",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15053672238443888,
+        "semantic_confidence": 0.15495830581446052
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "copd (chronic obstructive pulmonary disease)",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6038977482118655,
+        "semantic_confidence": 0.44531358923121245
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "fev 1- 26%",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3009472978761867,
+        "semantic_confidence": 0.16886759359677264
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "small cell lung cancer",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.44547464693102035,
+        "semantic_confidence": 0.7332007265818794
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22772612465355108,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "former",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19915665864377105,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23782777270894373,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23158139087536828,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22211462159543108,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24874951245556495,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2345775638005574,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23036440042711331,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2141212417706481,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3200165515560396,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22557233937139065,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22628346357040915,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.34559599884400344,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "smokeless tobacco",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.38091010704208095,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2844454654379098,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3052403753158115,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "vaping use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29807914176019507,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "never used",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.324777292212804,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.32145859746478744,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2766611268882853,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "alcohol use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2766611268882853,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tobacco use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2735316671119679,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": null
+    },
+    {
+      "entity": "drug use",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24335676872923434,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4703392674048789,
+        "semantic_confidence": 0.26432291732169666
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.440628981983219,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4592010473674169,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43256708433320873,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "pain",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1020722120381031,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.42063626966873835,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "shortness of breath",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19251127478283747,
+        "semantic_confidence": 0.26965665080173074
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.48152953616940597,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.46544470865857224,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "nausea/vomiting",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19357166179124555,
+        "semantic_confidence": 0.1980131417287524
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.49373584254335395,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5284606052942745,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "systolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.04037665942126702,
+        "semantic_confidence": 0.8466420572917822
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diastolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.04501231922435994,
+        "semantic_confidence": 0.819750362716774
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ht",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0754645510477392,
+        "semantic_confidence": 0.4201313164660598
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bmi",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09028670904807068,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "body mass index is",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16694053357579253,
+        "semantic_confidence": 0.9700722673345045
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hba1c",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.048924305105452995,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3707360116536059,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "nebulizer accessories kit",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31099340206039106,
+        "semantic_confidence": 0.0830861418292495
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3411533990136404,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31571704126668326,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.34743294954629295,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.46265570875373546,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4802095579170446,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3829309542005914,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current outpatient medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.46930865681387085,
+        "semantic_confidence": 0.29165068943470523
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "nebulizer solution",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3705197436894726,
+        "semantic_confidence": 0.8418728038357695
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "edema",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.32765576444575006,
+        "semantic_confidence": 0.059866392818058375
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROBLEM"
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.36247935925074837,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.36247935925074837,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3585117464362311,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3665816840598018,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "eodinp",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1864408308528567,
+        "semantic_confidence": 0.3778370690126747
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3585117464362311,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.37082652069163363,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.37522231623421326,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3585117464362311,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "co2",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "clinical_range_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11793112133072145,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.37868855167651333,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.36247935925074837,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3743708114660352,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.8526196321932885,
+        "semantic_confidence": 0.22660117132066543
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24021025188037173,
+        "semantic_confidence": 0.22660117132066543
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "atorvastatin, 40 mg, at bedtime",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3573627953572687,
+        "semantic_confidence": 0.7908757947480094
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "metoprolol succinate er, 25 mg, daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4776494054361329,
+        "semantic_confidence": 0.7570855669180826
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "aspirin, enteric coated, 81 mg, daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43391108096424524,
+        "semantic_confidence": 0.5781117545710802
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "cholecalciferol, 2,000 units, daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.376873038754844,
+        "semantic_confidence": 0.18707300715522673
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ipratropium-albuterol, 3 ml, qid",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3646565326199483,
+        "semantic_confidence": 0.7035136372748779
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "methyiprednisolone sodium succinate, 40 mg, q 12 h",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4765885488482891,
+        "semantic_confidence": 0.3830260007197913
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "heparin, 5,000 units, q 12 h",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3232146314136904,
+        "semantic_confidence": 0.7440252922501225
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ceftriaxone, 1 g, q 24 h prn",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31236204167814197,
+        "semantic_confidence": 0.8806848306622833
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "naci 0.9%, 20 ml, prn",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2749376403873096,
+        "semantic_confidence": 0.21617915230699947
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "albuterol, 2.5 mg, q 4 h prn",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4640364556067311,
+        "semantic_confidence": 0.8019409156976047
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2809170041721351,
+        "semantic_confidence": 0.22660117132066543
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "icu checklist",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2082808623450883,
+        "semantic_confidence": 0.20405967290325905
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "pain",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09885687457624746,
+        "semantic_confidence": 1.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "sedation and analgesia",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31308033393406953,
+        "semantic_confidence": 0.6602190135070012
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "spontaneous awakening",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20724448127683429,
+        "semantic_confidence": 0.16686974175253846
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "breathing trials",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1482346254868734,
+        "semantic_confidence": 0.15615872814868534
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "delirium",
+      "type": "MENTAL_STATUS",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0843888136177241,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "early mobility/excercise",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20747915147986498,
+        "semantic_confidence": 0.06604039578339028
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "family engagement and empowerment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3351724001473428,
+        "semantic_confidence": 0.40102011618613365
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "icu plan of care visit at bedside in last 24 hours",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.35589685806473564,
+        "semantic_confidence": 0.1543960439477805
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "vte prophylaxis",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1444037066119763,
+        "semantic_confidence": 0.16190172921260243
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "%fio2",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "clinical_range_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19190653022664483,
+        "semantic_confidence": 0.42170628429683554
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "acute respiratory failure",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2899537196773066,
+        "semantic_confidence": 0.5014459141149379
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bipap",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09681354459962167,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "acute exacerbation copd",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.266408376082934,
+        "semantic_confidence": 0.5687882966708064
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "acute kidney injury on ckd",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26836910580167633,
+        "semantic_confidence": 0.44061079334723735
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tachycardia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08978514055450693,
+        "semantic_confidence": 0.30475759973789557
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "small cell neuroendocrine tumor",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23311563076864217,
+        "semantic_confidence": 0.3494196752699775
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "former tobacco smoker",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1793074853179275,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hfref",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.058880547437395736,
+        "semantic_confidence": 0.10901280973804439
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "map",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08454416873451936,
+        "semantic_confidence": 0.1548750180333694
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bipap",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09681354459962167,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "solu-medrol 40 mg daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23880564531270126,
+        "semantic_confidence": 0.20064022561540445
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "albuterol every 4 hours as needed",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2975573857133572,
+        "semantic_confidence": 0.6527008786232492
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "rocephin",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14165100678642867,
+        "semantic_confidence": 0.2817453645706318
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ambulatory desaturation study",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2732539911008095,
+        "semantic_confidence": 0.2533232698927799
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "toprol 25 mg daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26251778857206504,
+        "semantic_confidence": 0.4831910485854283
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "dvt prophylaxis",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13068344545774888,
+        "semantic_confidence": 0.1538827177766942
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "heparin",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14147151906317057,
+        "semantic_confidence": 1.0000000000000004
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "renal function electrolytes",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2190222398095924,
+        "semantic_confidence": 0.44923749547761543
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "nephrotoxic agents",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16699158976093695,
+        "semantic_confidence": 0.18434921518870295
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date] cleveland clinic facility",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4408002588313264,
+        "semantic_confidence": 0.1156318914773728
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "copd exacerbation",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.411994688254494,
+        "semantic_confidence": 0.6392270274367858
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "cbc",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.062431172641175155,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "npo",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05716748561752192,
+        "semantic_confidence": 0.06472146435122582
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "meds",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10418684687547555,
+        "semantic_confidence": 0.05921242707779213
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    }
+  ]
+}

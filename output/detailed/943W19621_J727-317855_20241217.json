@@ -1,0 +1,398 @@
+{
+  "file_name": "943W19621_J727-317855_20241217.json",
+  "entity_type_error_rate": {
+    "MEDICINE": 0.125,
+    "PROBLEM": 0.0,
+    "PROCEDURE": 0.2857142857142857,
+    "TEST": 0.3333333333333333,
+    "VITAL_NAME": 0.16666666666666666,
+    "IMMUNIZATION": 0.0,
+    "MEDICAL_DEVICE": 0.14285714285714285,
+    "MENTAL_STATUS": 0.0,
+    "SDOH": 1.0,
+    "SOCIAL_HISTORY": 1.0
+  },
+  "assertion_error_rate": {
+    "POSITIVE": 0.06578947368421052,
+    "NEGATIVE": 0.6,
+    "UNCERTAIN": 0.0
+  },
+  "temporality_error_rate": {
+    "CURRENT": 0.0,
+    "CLINICAL_HISTORY": 0.0,
+    "UPCOMING": 0.0,
+    "UNCERTAIN": 0.0
+  },
+  "subject_error_rate": {
+    "PATIENT": 0.0,
+    "FAMILY_MEMBER": 0.0
+  },
+  "event_date_accuracy": 1.0,
+  "attribute_completeness": 0.8507751937984497,
+  "file_statistics": {
+    "duplicate_rate": 0.06976744186046512,
+    "pct_medicine": 0.09302325581395349,
+    "pct_procedure": 0.32558139534883723,
+    "pct_positive": 0.8837209302325582,
+    "total_entities": 86,
+    "is_statistical_anomaly": false
+  },
+  "coherence_statistics": {
+    "coherence_omission_warnings": [],
+    "coherence_score": 1.0
+  },
+  "error_details": [
+    {
+      "entity": "acute abdominal pain",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.45999568137890773,
+        "semantic_confidence": 0.13846478745386265
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diabetes",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1517319217687858,
+        "semantic_confidence": 0.024464537765486086
+      },
+      "vocab_correction": "PROBLEM",
+      "consensus_correction": "PROBLEM"
+    },
+    {
+      "entity": "metformin 500 mg",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5557801296220778,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "systolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.03286438488662307,
+        "semantic_confidence": 0.8466420572917822
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diastolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.02542819097339579,
+        "semantic_confidence": 0.819750362716774
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "temp",
+      "type": "SDOH",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1777968512610217,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": "VITAL_NAME"
+    },
+    {
+      "entity": "patient to return to [facility_name] for follow-up on [encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5235016570687686,
+        "semantic_confidence": 0.15928504404155946
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "colon cancer screening",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.42115921051312777,
+        "semantic_confidence": 0.16020203155090743
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "anesthesia record",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.34686685457814853,
+        "semantic_confidence": 0.6802633831080902
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "blood pressure monitoring",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24721073437696298,
+        "semantic_confidence": 0.9094306068523338
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "oximetry",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.057061440976815335,
+        "semantic_confidence": 0.08880432463479994
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "colonoscopy",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23811106424588616,
+        "semantic_confidence": 0.17723295496801703
+      },
+      "vocab_correction": "PROCEDURE",
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29736589155396054,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.32799736277833247,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "digital exam",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1485904371084467,
+        "semantic_confidence": 0.13740111658540624
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bleeding",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2448804655797183,
+        "semantic_confidence": 0.5850716478721454
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROBLEM"
+    },
+    {
+      "entity": "encounter 2",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.10912353326834554
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "colon cancer screening",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6114300436487591,
+        "semantic_confidence": 0.16020203155090743
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "polyp transverse colon x2",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5784014399226952,
+        "semantic_confidence": 0.43937773012026476
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ulceration with inflammation with changes",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.30786748094854827,
+        "semantic_confidence": 0.3283593893111684
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ischemic colitis",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31197129407298446,
+        "semantic_confidence": 0.4777154452471802
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tubular adenoma(s)",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12028342268591273,
+        "semantic_confidence": 0.46854058843142005
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.27574781887500704,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29193050539937127,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.33735321266561974,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    }
+  ]
+}

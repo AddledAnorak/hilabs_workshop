@@ -1,0 +1,32 @@
+{
+  "file_name": "241W15237_N991-674329_20241216.json",
+  "entity_type_error_rate": {
+    "MEDICINE": 0.04,
+    "PROBLEM": 0.1152073732718894,
+    "PROCEDURE": 0.25311203319502074,
+    "TEST": 0.057692307692307696,
+    "VITAL_NAME": 0.029411764705882353,
+    "IMMUNIZATION": 0.25,
+    "MEDICAL_DEVICE": 0.22727272727272727,
+    "MENTAL_STATUS": 0.06666666666666667,
+    "SDOH": 0.11764705882352941,
+    "SOCIAL_HISTORY": 0.11538461538461539
+  },
+  "assertion_error_rate": {
+    "POSITIVE": 0.11333333333333333,
+    "NEGATIVE": 0.19047619047619047,
+    "UNCERTAIN": 0.0
+  },
+  "temporality_error_rate": {
+    "CURRENT": 0.2331002331002331,
+    "CLINICAL_HISTORY": 0.10429447852760736,
+    "UPCOMING": 0.039473684210526314,
+    "UNCERTAIN": 0.0
+  },
+  "subject_error_rate": {
+    "PATIENT": 0.0,
+    "FAMILY_MEMBER": 0.1
+  },
+  "event_date_accuracy": 1.0,
+  "attribute_completeness": 0.9464809384164223
+}

@@ -1,0 +1,2982 @@
+{
+  "file_name": "019W06677_J608-122479_20241212.json",
+  "entity_type_error_rate": {
+    "MEDICINE": 0.024390243902439025,
+    "PROBLEM": 0.13636363636363635,
+    "PROCEDURE": 0.37435897435897436,
+    "TEST": 0.25,
+    "VITAL_NAME": 0.35714285714285715,
+    "IMMUNIZATION": 0.5,
+    "MEDICAL_DEVICE": 0.8888888888888888,
+    "MENTAL_STATUS": 0.0,
+    "SDOH": 0.6666666666666666,
+    "SOCIAL_HISTORY": 0.2
+  },
+  "assertion_error_rate": {
+    "POSITIVE": 0.1096938775510204,
+    "NEGATIVE": 0.0898876404494382,
+    "UNCERTAIN": 0.0
+  },
+  "temporality_error_rate": {
+    "CURRENT": 0.125,
+    "CLINICAL_HISTORY": 0.057692307692307696,
+    "UPCOMING": 0.05263157894736842,
+    "UNCERTAIN": 0.0
+  },
+  "subject_error_rate": {
+    "PATIENT": 0.0,
+    "FAMILY_MEMBER": 0.0
+  },
+  "event_date_accuracy": 1.0,
+  "attribute_completeness": 0.9032679738562092,
+  "file_statistics": {
+    "duplicate_rate": 0.10784313725490197,
+    "pct_medicine": 0.0803921568627451,
+    "pct_procedure": 0.38235294117647056,
+    "pct_positive": 0.7686274509803922,
+    "total_entities": 510,
+    "is_statistical_anomaly": false
+  },
+  "coherence_statistics": {
+    "coherence_omission_warnings": [],
+    "coherence_score": 1.0
+  },
+  "error_details": [
+    {
+      "entity": "h. pylori breath test",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2711134068500699,
+        "semantic_confidence": 0.304618866394146
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "infection",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13890467342650203,
+        "semantic_confidence": 0.06680607459985556
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROBLEM"
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3106729798398342,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter 1",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.11158836658764983
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "biopsies",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17126809018022143,
+        "semantic_confidence": 0.6510928637444728
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "helicobacter pylori",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18807838459181386,
+        "semantic_confidence": 0.35381879389281795
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "polyp",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.072369953798208,
+        "semantic_confidence": 0.11872608296929629
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "biopsy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0506446753892198,
+        "semantic_confidence": 1.0000000000000007
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "helicobacter pylorus",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17732286021985752,
+        "semantic_confidence": 0.33498235344895866
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "inflamation",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1616275595419859,
+        "semantic_confidence": 0.41485708161925683
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "stomach cancer",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2025241978720227,
+        "semantic_confidence": 0.45822810540699765
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "h. pylori",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07880066379409695,
+        "semantic_confidence": 0.12720172514604017
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "redness",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12409595061419573,
+        "semantic_confidence": 0.3250050585034126
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "soreness",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13495778749769521,
+        "semantic_confidence": 0.2642503347835119
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "inflammation",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1573033646319235,
+        "semantic_confidence": 0.5587086044421997
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "painful sores",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14829504985970848,
+        "semantic_confidence": 0.5235095886446209
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "peptic ulcers in your upper digestive tract",
+      "type": "PROCEDURE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2938448906722094,
+        "semantic_confidence": 0.15584359146866694
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "infection",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15687964784245195,
+        "semantic_confidence": 0.6820138727992259
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3131643867004376,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter 2",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.10912353326834554
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "h pylori breath test",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2691886432275922,
+        "semantic_confidence": 0.296960930005837
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "complications",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6933347248958482,
+        "semantic_confidence": 0.15835116096675128
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "estimated blood loss",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.719473379117493,
+        "semantic_confidence": 0.35002902700178307
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "estimated blood loss",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.719473379117493,
+        "semantic_confidence": 0.35002902700178307
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "anticoagulant",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19606343637617568,
+        "semantic_confidence": 0.16218868284029206
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "antiplatelet agents",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2118192140143355,
+        "semantic_confidence": 0.10182834660091758
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "mild systemic disease",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11709081421720703,
+        "semantic_confidence": 0.3908637451558963
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "aspirin",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11453170657776987,
+        "semantic_confidence": 1.0000000000000004
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "nsaid medications",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23547100156536876,
+        "semantic_confidence": 0.14647838433500338
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "scope # 665",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07410591729771937,
+        "semantic_confidence": 0.06012307074807785
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "colonoscopy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06448770417788757,
+        "semantic_confidence": 0.9999999999999999
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "perianal and digital rectal examinations",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.29362575803889934,
+        "semantic_confidence": 0.2417342094071646
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "multiple medium-mouthed diverticula",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.257610946171737,
+        "semantic_confidence": 0.4977693990662802
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "localized thickened folds",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2515309523071128,
+        "semantic_confidence": 0.1250872305152878
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "biopsies",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10563610829044097,
+        "semantic_confidence": 0.6510928637444728
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "cold forceps",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23637616076981147,
+        "semantic_confidence": 0.13588354956763338
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diminutive (1-3 mm) polyp",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1891268602778126,
+        "semantic_confidence": 0.23420342833382363
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "polyp",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12464548737979453,
+        "semantic_confidence": 0.11872608296929629
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "polyp",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12464548737979453,
+        "semantic_confidence": 0.11872608296929629
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "cold biopsy forceps",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23204502300848806,
+        "semantic_confidence": 0.10030635838287608
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "resection and retrieval",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2388192864805481,
+        "semantic_confidence": 0.17234618115818187
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "internal hemorrhoids",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2091386155316192,
+        "semantic_confidence": 0.2668515901589065
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "retroflexion",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1339702153396079,
+        "semantic_confidence": 0.15360630592893307
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hemorrhoids",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15727909738049264,
+        "semantic_confidence": 0.3498831935377812
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diverticulosis in the descending colon and in the sigmoid colon",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6831721605829564,
+        "semantic_confidence": 0.41973753531021046
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "written discharge instructions were provided to the patient",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.5393175791197082,
+        "semantic_confidence": 0.17011781237207915
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10381344813138138,
+        "semantic_confidence": 0.12547837556411598
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "continue present medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4213986112954716,
+        "semantic_confidence": 0.20599509077550024
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "colonoscopy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1399995148988501,
+        "semantic_confidence": 0.9999999999999999
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "biopsy, single or multiple",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4635900062347607,
+        "semantic_confidence": 0.49932709481720083
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "z12.11",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14857206633615389,
+        "semantic_confidence": 0.0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter for screening for malignant neoplasm of colon",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7540762468714401,
+        "semantic_confidence": 0.20601354715640371
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "mrn",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13647927672159046,
+        "semantic_confidence": 0.46029893260644966
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.40390071626281826,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "colonoscopy",
+      "type": "SDOH",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11977286426375118,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": "PROCEDURE",
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "encounter 3",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.10789496144850699
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "complications",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.6933347248958482,
+        "semantic_confidence": 0.15835116096675128
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "estimated blood loss",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.719473379117493,
+        "semantic_confidence": 0.35002902700178307
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "estimated blood loss",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.719473379117493,
+        "semantic_confidence": 0.35002902700178307
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "anticoagulant",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20177413733788968,
+        "semantic_confidence": 0.16218868284029206
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "antiplatelet agents",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2147326461374816,
+        "semantic_confidence": 0.10182834660091758
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "asa grade assessment",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19465829135655313,
+        "semantic_confidence": 0.21614128763271753
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "mild systemic disease",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12280008490903606,
+        "semantic_confidence": 0.3908637451558963
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "aspirin",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1172698967261903,
+        "semantic_confidence": 1.0000000000000004
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "nsaid medications",
+      "type": "MEDICINE",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.24054298317029396,
+        "semantic_confidence": 0.14647838433500338
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "scope # 019",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07884349624236685,
+        "semantic_confidence": 0.05067386928436824
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "upper gi endoscopy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09690873733971386,
+        "semantic_confidence": 0.8429332221512092
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "middle third of the esophagus and upper third of the esophagus were mildly dilated",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4965548789502282,
+        "semantic_confidence": 0.25576180603784987
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "non-obstructing schatzki ring",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16054758924827386,
+        "semantic_confidence": 0.29439898091468936
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hiatal hernia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13863633934184635,
+        "semantic_confidence": 0.23218755635124844
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patchy mild inflammation characterized by erythema",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3045456961170233,
+        "semantic_confidence": 0.32868940456718365
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "biopsies",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13432671079798963,
+        "semantic_confidence": 0.6510928637444728
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "cold forceps",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2052460624827892,
+        "semantic_confidence": 0.13588354956763338
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "helicobacter pylori testing",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21341006337581242,
+        "semantic_confidence": 0.18962090600974707
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "large diverticulum",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14835021753299957,
+        "semantic_confidence": 0.6676495042385318
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "biopsies",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13432671079798963,
+        "semantic_confidence": 0.6510928637444728
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "cold forceps",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2052460624827892,
+        "semantic_confidence": 0.13588354956763338
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "celiac disease",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14499842485589998,
+        "semantic_confidence": 0.4894213740591082
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "non-obstructing schatzki ring",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2385924757048133,
+        "semantic_confidence": 0.29439898091468936
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "1 cm hiatal hernia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2050715307260094,
+        "semantic_confidence": 0.2167690777292757
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "gastritis, characterized by erythema",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3045428638539718,
+        "semantic_confidence": 0.4664054299936649
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "biopsied",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22666233408041117,
+        "semantic_confidence": 0.6359956450515256
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "duodenal diverticulum",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2171461643715952,
+        "semantic_confidence": 0.6628919776262423
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "biopsies",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.23084042714059141,
+        "semantic_confidence": 0.6510928637444728
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "cold forceps",
+      "type": "MEDICAL_DEVICE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.184794770906887,
+        "semantic_confidence": 0.13588354956763338
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "celiac disease",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1813249096268504,
+        "semantic_confidence": 0.4894213740591082
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "pathology results",
+      "type": "TEST",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22348119733200716,
+        "semantic_confidence": 0.1136811334118429
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "delayed complications",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3390274973582226,
+        "semantic_confidence": 0.1593890386228668
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "written discharge instructions were provided to the patient",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.579749022953659,
+        "semantic_confidence": 0.17011781237207915
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diet",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10886111109890782,
+        "semantic_confidence": 0.12547837556411598
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "continue present medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.49739205654297264,
+        "semantic_confidence": 0.20599509077550024
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "esophagogastroduodenoscopy flexible, transoral; with biopsy, single or multiple",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.7621307442569191,
+        "semantic_confidence": 0.3384384648099609
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diverticulosis of small intestine without perforation or abscess without bleeding",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.41985395867750747,
+        "semantic_confidence": 0.3809521475671527
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter 4",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.10789496144850699
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter 4",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.10789496144850699
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "expedited hospital follow-up",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18294006114428987,
+        "semantic_confidence": 0.13562162307614684
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "ultrasound",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10977469789985718,
+        "semantic_confidence": 0.9999999999999994
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "liver hemangioma",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1511354910007957,
+        "semantic_confidence": 0.4569589762492978
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "noncontrast ap ct",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17539693816482085,
+        "semantic_confidence": 0.24983089799208974
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diverticulosis of the sigmoid colon",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.371420471449472,
+        "semantic_confidence": 0.4977584622286792
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "acute diverticulitis",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.28826381765870585,
+        "semantic_confidence": 0.9170258998071477
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "lfts",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.06810705259853915,
+        "semantic_confidence": 0.7175719799202366
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "creatinine",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1665975142736492,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "troponins",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.119740560219708,
+        "semantic_confidence": 0.9144947388547157
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hemoglobin",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1132698084831454,
+        "semantic_confidence": 0.8604415013208233
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "heartburn",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09582049073207666,
+        "semantic_confidence": 0.45401376696468043
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "epigastric discomfort",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1606003339955346,
+        "semantic_confidence": 0.33670099191581543
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "nausea",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0560217356795135,
+        "semantic_confidence": 0.1572620093867405
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "vomiting",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09030663761209178,
+        "semantic_confidence": 0.2235997656420352
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "lost her appetite",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22308713852043333,
+        "semantic_confidence": 0.33232670135017117
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "constipation",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18400208399987159,
+        "semantic_confidence": 0.23867236685112797
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "lactulose twice daily",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1851603473289434,
+        "semantic_confidence": 0.8298602252543006
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "colonoscopy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13817029578521775,
+        "semantic_confidence": 0.9999999999999999
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hyperplastic polyp",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13389530684542308,
+        "semantic_confidence": 0.3496516316718142
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diverticulosis",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2512423537037929,
+        "semantic_confidence": 0.7257819715428122
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bowel resection",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1429010883377848,
+        "semantic_confidence": 0.19036543205073886
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "recurrent diverticulitis",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.25658119170762184,
+        "semantic_confidence": 0.8546288978142511
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diverticuli/hyperplastic polyp(s)",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.4220081868346451,
+        "semantic_confidence": 0.6149524637710846
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "hemorrhoids, external with other complication",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.39353509084100763,
+        "semantic_confidence": 0.16168638636827046
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "current medications",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1803059622599541,
+        "semantic_confidence": 0.22660117132066543
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "liquid fish oil",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.17696249868845118,
+        "semantic_confidence": 0.18638390007944913
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "pulmonary symptoms",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.20317094905395455,
+        "semantic_confidence": 0.5980397001494907
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "systolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14312961149680647,
+        "semantic_confidence": 0.8466420572917822
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "diastolic blood pressure",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.13961317504257595,
+        "semantic_confidence": 0.819750362716774
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "weight",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.12933155677650465,
+        "semantic_confidence": 1.0000000000000002
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "lost",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.0991793190570427,
+        "semantic_confidence": 0.3103135281090024
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "tenderness",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.16592432850962627,
+        "semantic_confidence": 0.25624046800144373
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "slow transit constipation",
+      "type": "PROBLEM",
+      "assertion": "",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22781961566908282,
+        "semantic_confidence": 0.21350697604021457
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "gerd",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.05287869392023561,
+        "semantic_confidence": 0.10406420220970494
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "anesthesia complications",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2574334971457526,
+        "semantic_confidence": 0.21717436322721545
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "infection",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14686727186201426,
+        "semantic_confidence": 0.6820138727992259
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "bleeding",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true,
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09504941239713527,
+        "semantic_confidence": 0.18614304781504917
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "colonic perforation",
+      "type": "PROBLEM",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1918997560738752,
+        "semantic_confidence": 0.38242391532772346
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "missed lesions",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "temporality_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.1642866212684647,
+        "semantic_confidence": 0.21735914941208123
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "reflux",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10139392678630858,
+        "semantic_confidence": 0.494616114907758
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3299081481453083,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "upper gi biopsy",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2229209160990714,
+        "semantic_confidence": 0.08985606977641297
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "giardia",
+      "type": "IMMUNIZATION",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.10189799434818683,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "malignancy",
+      "type": "IMMUNIZATION",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.11795853083259215,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROBLEM"
+    },
+    {
+      "entity": "polypectomy excision, descending",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22273692032339734,
+        "semantic_confidence": 0.34329288106955635
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.362205479359651,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31800153541175197,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31627249662909207,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "signed by [provider_name] md",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.28278792581233514,
+        "semantic_confidence": 0.17682028795284968
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "trial of therapy screening for colorectal",
+      "type": "PROBLEM",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3735867224862104,
+        "semantic_confidence": 0.33636086242010593
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43932027910338495,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3875921281026364,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3854970157670691,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient lab id",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.2522636376591127
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22559140493069485,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2504214912318395,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "upper abd symptoms",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.15905124309533794,
+        "semantic_confidence": 0.16422936778431585
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "upper gi biopsy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19341488679867502,
+        "semantic_confidence": 0.8206364766437282
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "giardia",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.09228750477359689,
+        "semantic_confidence": 0.04652772255368004
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "upper gi biopsy",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.19341488679867502,
+        "semantic_confidence": 0.8206364766437282
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "polypectomy excision, descending",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22680176856694365,
+        "semantic_confidence": 0.34329288106955635
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43932027910338495,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3875921281026364,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3854970157670691,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "brcnr01",
+      "type": "SDOH",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2343160278296035,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "patient lab id",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.2522636376591127
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "increased lymphoplasmacytic cells in the lamina propria",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3361488210084137,
+        "semantic_confidence": 0.36869928942926644
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "parietal cell hyperplasia",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2025201187862777,
+        "semantic_confidence": 0.2998095035555295
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43932027910338495,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3875921281026364,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3854970157670691,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient lab id",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.2522636376591127
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3320964397901369,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter 5",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.11158836658764983
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43932027910338495,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3875921281026364,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3854970157670691,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient lab id",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.07387207648186386
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "giardia",
+      "type": "TEST",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.07930207162958525,
+        "semantic_confidence": 0.04652772255368004
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "polypectomy excision, descending",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.293886678888917,
+        "semantic_confidence": 0.34329288106955635
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "polypectomy excision, descending",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.293886678888917,
+        "semantic_confidence": 0.34329288106955635
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter 6",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.11158836658764983
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43932027910338495,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3875921281026364,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3854970157670691,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient lab id",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.2522636376591127
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "icd",
+      "type": "MEDICINE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.26503937545680206,
+        "semantic_confidence": 0.03786303692786233
+      },
+      "vocab_correction": "MEDICAL_DEVICE",
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31453153655121524,
+        "semantic_confidence": 0.11519705364891558
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter 7",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.9999999999999999,
+        "semantic_confidence": 0.11158836658764983
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.362205479359651,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31800153541175197,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.31627249662909207,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient lab id",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.2522636376591127
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "giardia",
+      "type": "TEST",
+      "assertion": "NEGATIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.08293982704754277,
+        "semantic_confidence": 0.04652772255368004
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "upper gi biopsy",
+      "type": "SOCIAL_HISTORY",
+      "assertion": "",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.18921531555813792,
+        "semantic_confidence": 0
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "polypectomy excision, descending",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.21738246552501372,
+        "semantic_confidence": 0.34329288106955635
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "polyp",
+      "type": "VITAL_NAME",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.14554536562608197,
+        "semantic_confidence": 0.07170792619436432
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROBLEM"
+    },
+    {
+      "entity": "requisition",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2440647255848687,
+        "semantic_confidence": 0.17588438689034208
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43932027910338495,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3875921281026364,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3854970157670691,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient lab id",
+      "type": "PROCEDURE",
+      "assertion": "UNCERTAIN",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.2522636376591127
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.22863742133234788,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "fragments of hyperplastic polyp",
+      "type": "PROBLEM",
+      "assertion": "POSITIVE",
+      "errors": {
+        "assertion_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3161175385269043,
+        "semantic_confidence": 0.29595180040618163
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43932027910338495,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "VITAL_NAME",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true,
+        "span_alignment_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3875921281026364,
+        "semantic_confidence": 0.07958096945165805
+      },
+      "vocab_correction": null,
+      "consensus_correction": "PROCEDURE"
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3854970157670691,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient lab id",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.2522636376591127
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.43932027910338495,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3875921281026364,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "encounter_date]",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.3854970157670691,
+        "semantic_confidence": 0.11918302675226738
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    },
+    {
+      "entity": "patient lab id",
+      "type": "PROCEDURE",
+      "assertion": "POSITIVE",
+      "errors": {
+        "entity_type_error": true
+      },
+      "diagnostic_scores": {
+        "grounding": 0.2201440030213415,
+        "semantic_confidence": 0.2522636376591127
+      },
+      "vocab_correction": null,
+      "consensus_correction": null
+    }
+  ]
+}
