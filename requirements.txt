@@ -1,0 +1,7 @@
+openai
+streamlit
+pandas
+plotly
+python-dotenv
+tqdm
+kaleido

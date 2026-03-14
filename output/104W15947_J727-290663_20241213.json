@@ -1,0 +1,32 @@
+{
+  "file_name": "104W15947_J727-290663_20241213.json",
+  "entity_type_error_rate": {
+    "MEDICINE": 0.0,
+    "PROBLEM": 0.0,
+    "PROCEDURE": 0.1534090909090909,
+    "TEST": 0.0,
+    "VITAL_NAME": 0.0,
+    "IMMUNIZATION": 0.0,
+    "MEDICAL_DEVICE": 0.0,
+    "MENTAL_STATUS": 0.0,
+    "SDOH": 0.0,
+    "SOCIAL_HISTORY": 0.0
+  },
+  "assertion_error_rate": {
+    "POSITIVE": 0.3395348837209302,
+    "NEGATIVE": 0.0,
+    "UNCERTAIN": 0.0
+  },
+  "temporality_error_rate": {
+    "CURRENT": 0.26248399487836105,
+    "CLINICAL_HISTORY": 0.22535211267605634,
+    "UPCOMING": 0.2839506172839506,
+    "UNCERTAIN": 0.0
+  },
+  "subject_error_rate": {
+    "PATIENT": 0.002034587995930824,
+    "FAMILY_MEMBER": 0.12
+  },
+  "event_date_accuracy": 1.0,
+  "attribute_completeness": 0.9155228758169935
+}
