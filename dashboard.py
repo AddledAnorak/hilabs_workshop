@@ -5,14 +5,15 @@ import glob
 import os
 import plotly.express as px
 
-st.set_page_config(page_title="V2 Advanced Clinical AI Evaluator", layout="wide")
+st.set_page_config(page_title="V3 Advanced Clinical AI Evaluator", layout="wide")
 
-st.title("🏥 V2 Evaluation Framework Dashboard")
-st.markdown("Advanced analytics powered by **Sentence-Transformers** & **Isolation Forests**.")
+st.title("🏥 V3 Evaluation Framework Dashboard")
+st.markdown("Advanced analytics powered by **Medical Vocabulary Correlation**, **Cross-File Consensus**, & **Statistical Outliers**.")
 
 @st.cache_data
 def load_data():
-    json_files = glob.glob(os.path.join("output", "*.json"))
+    # Point to the detailed results for V3 analytics
+    json_files = glob.glob(os.path.join("output", "detailed", "*.json"))
     if not json_files:
         return pd.DataFrame(), pd.DataFrame()
         
@@ -41,16 +42,22 @@ if df.empty:
     st.code("python test.py --batch")
 else:
     # Sidebar metrics
-    st.sidebar.header("🎯 V2 System Overview")
+    st.sidebar.header("🎯 V3 System Overview")
     st.sidebar.metric("Documents Analyzed", len(df))
     st.sidebar.metric("Statistical Anomalies Found", df['file_statistics.is_statistical_anomaly'].sum())
-    st.sidebar.metric("Avg Extraction Redundancy", f"{df['file_statistics.duplicate_rate'].mean():.1%}")
+    
+    # Calculate totals
+    vocab_errs = int(err_df['vocab_correction'].notna().sum()) if 'vocab_correction' in err_df.columns else 0
+    coh_warns = df['coherence_statistics.coherence_score'].mean() if 'coherence_statistics.coherence_score' in df.columns else 1.0
+    
+    st.sidebar.metric("Vocabulary Typing Errors", vocab_errs)
+    st.sidebar.metric("Clinical Coherence Score", f"{coh_warns:.1%}")
 
     # Tabs
-    tab1, tab2, tab3 = st.tabs(["📊 Heatmap & Outliers", "🔍 Entity Drill-Down", "📋 Recommended Guardrails"])
+    tab1, tab2, tab3 = st.tabs(["📊 Heatmap & Outliers", "🔍 Entity Drill-Down", "📋 Clinical Context Omissions"])
 
     with tab1:
-        st.subheader("V2 Ensemble Error Rates")
+        st.subheader("V3 Ensemble Error Rates")
         numeric_cols = [c for c in df.columns if '_error_rate.' in c]
         means = df[numeric_cols].mean()
 
@@ -102,9 +109,12 @@ else:
             if sel_file: view_df = view_df[view_df['file_name'].isin(sel_file)]
             
             # Format columns nicely
-            display_cols = ['entity', 'type', 'assertion', 'diagnostic_scores.semantic_confidence', 
-                           'diagnostic_scores.grounding', 'errors.entity_type_error', 
-                           'errors.assertion_error', 'file_name']
+            display_cols = [
+                'entity', 'type', 'vocab_correction', 'consensus_correction',
+                'errors.span_alignment_error', 'errors.clinical_range_error',
+                'diagnostic_scores.semantic_confidence', 'diagnostic_scores.grounding', 
+                'errors.entity_type_error', 'errors.assertion_error', 'file_name'
+            ]
                            
             # Only keep columns that actually exist
             display_cols = [c for c in display_cols if c in view_df.columns]
@@ -114,14 +124,20 @@ else:
             st.info("No flagged entities found matching error criteria.")
 
     with tab3:
-        st.subheader("🛡️ V2 Recommended Guardrails")
-        st.markdown("""
-        **1. Vector Embedding Fence**:
-        Deploy a Sentence-Transformer filter downstream. Entities dropping below 0.15 cosine similarity against their canonical `entity_type` references should trigger human review.
+        st.subheader("📋 Clinical Context Omissions (Med-Diagnosis Coherence)")
+        st.markdown("Entities where a medication was extracted, but its physiological indication (diagnosis) was missed by the pipeline.")
         
-        **2. Strict Redundancy Caps**:
-        The Isolation Forest identified documents with duplicate extraction rates above 20%. Any identical contextual triplet mapping should abort processing to prevent downstream analytics poisoning.
-        
-        **3. Contextual Bounds Framing (NegEx)**:
-        Relying on regex to find 'denies' anywhere in the raw text caused massive false Positives. Guardrail deployed: Negation cross-validity is now strictly bound to a trailing 5-token `scope window` from the matched entity index. 
-        """)
+        coh_data = []
+        for index, row in df.iterrows():
+            if 'coherence_statistics.coherence_omission_warnings' in row and isinstance(row['coherence_statistics.coherence_omission_warnings'], list):
+                for warn in row['coherence_statistics.coherence_omission_warnings']:
+                    coh_data.append({
+                        "File": row['file_name'],
+                        "Medication Extracted": warn.get('medication'),
+                        "Missing Indication (Not Extracted)": ", ".join(warn.get('missing_indication_context', []))
+                    })
+                    
+        if coh_data:
+            st.dataframe(pd.DataFrame(coh_data), hide_index=True, use_container_width=True)
+        else:
+            st.success("No clinical coherence omission warnings found across the batch!")

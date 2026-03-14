@@ -112,10 +112,21 @@ def evaluate_entity(entity_data: dict) -> dict:
     # 5. Date Accuracy
     relations = metadata.get('relations', [])
     for rel in relations:
-        if rel.get('entity_type') == 'exact_date' or rel.get('entity_type') == 'derived_date':
+        if 'date' in rel.get('entity_type', ''):
             date_val = rel.get('entity', '')
             if '[' in date_val and ']' in date_val:
                 errors['event_date_accuracy'] = 0.0
+                
+        # 5b. Span Overlap Validation check
+        # An entity value's span should reasonably correspond to its extracted text length
+        span = rel.get('entity_span', {})
+        start, end = span.get('start'), span.get('end')
+        ent_text = rel.get('entity', '')
+        if start is not None and end is not None and ent_text:
+            if abs((end - start) - len(ent_text)) > (len(ent_text) * 0.5):
+                # The extracted span is massively longer/shorter than the actual text length
+                # E.g. extracted text is "d5w" (3 chars) but span is [40, 60] (20 chars)
+                errors['span_alignment_error'] = True
             
     # 6. Attribute Completeness
     if entity_type == "MEDICINE":
