@@ -9,7 +9,7 @@ client = None
 if os.getenv("OPENAI_API_KEY"):
     client = OpenAI(
         api_key=os.getenv("OPENAI_API_KEY"),
-        base_url=os.getenv("OPENAI_BASE_URL"),
+        # base_url=os.getenv("OPENAI_BASE_URL"),
         timeout=5.0,  # 5 second timeout to prevent hanging
         max_retries=0
     )
